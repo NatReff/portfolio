@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta name="author" content="SemiColonWeb">
+	<meta name="description"
+		content="Get Canvas to build powerful websites easily with the Highly Customizable &amp; Best Selling Bootstrap Template, today.">
+
+	<!-- Font Imports -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Rubik:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Core Style -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Font Icons -->
+	<link rel="stylesheet" href="css/font-icons.css">
+
+	<!-- Plugins/Components CSS -->
+	<link rel="stylesheet" href="css/components/bs-select.css">
+
+	<!-- Niche Demos -->
+	<link rel="stylesheet" href="demos/doctors/doctors.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Document Title
+	============================================= -->
+	<title>Doctors | Canvas</title>
+	<style>
+		#content,
+		#header,
+		#header-wrap {
+			background-color: #ffffff;
+		}
+
+		#booking-registration .list-group a {
+			background-color: transparent;
+			border-radius: 0;
+			border: 0;
+			border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+			font-size: 16px;
+			color: rgba(255, 255, 255, 0.3);
+			font-family: 'Poppins', sans-serif;
+			transition: all .2s ease;
+		}
+
+		.dark #booking-registration .list-group a {
+			background-color: transparent;
+			border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+			color: rgba(255, 255, 255, 0.3);
+		}
+
+		.dark #booking-registration .list-group a.active {
+			border-bottom-color: #FFB701;
+			color: #FFB701;
+		}
+
+		.dark #booking-registration .list-group a.active~a {
+			color: #FFF;
+			border-bottom-color: rgba(255, 255, 255, 0.8);
+			pointer-events: none;
+		}
+
+		#booking-registration label:not(.custom-control-label) {
+			text-transform: none;
+			font-weight: 500;
+			letter-spacing: 0;
+			text-align: left;
+		}
+
+		#booking-registration input.border-form-control,
+		#booking-registration select.border-form-control,
+		#booking-registration .form-control.border-form-control {
+			--cnvs-input-btn-padding-x: 0px;
+			--cnvs-input-btn-border-width: 1px;
+			--cnvs-input-btn-border-color: rgba(0, 0, 0, 0.3);
+			--cnvs-input-font-family: 'Poppins', sans-serif;
+			--cnvs-input-btn-input-bg: transparent !important;
+			;
+		}
+
+		.dark #booking-registration .form-control.border-form-control:not(.not-dark) {
+			--cnvs-input-btn-border-color: rgba(255, 255, 255, 0.4);
+			--cnvs-input-btn-input-color: #FFF;
+			--cnvs-input-focus-border-color: rgba(255, 255, 255, 1);
+			--cnvs-input-focus-color: #FFF;
+			--cnvs-input-focus-bg: transparent !important;
+		}
+
+		#booking-registration button {
+			background-color: #FFB701;
+		}
+
+		.fcolor {
+			color: #FFB701 !important;
+		}
+
+		#booking-registration .btn-check:checked+.list-group-item {
+			background-color: #FFF;
+		}
+
+		/* #booking-registration .btn-check + .list-group-item:hover { background-color: rgba(255, 255, 255, 0.01); } */
+
+		#booking-registration .btn-check:checked+.list-group-item h4,
+		#booking-registration .btn-check:checked+.list-group-item h3 {
+			color: #062639;
+		}
+	</style>
+
+
+
+</head>
+
+<!-- stretched (body)
+============================================= -->
+
+<body class="stretched backwhite">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper">
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="header-size-md dark transparent-header floating-header" data-sticky-shrink="false"
+			data-responsive-class="not-dark">
+			<div id="header-wrap" class="border-0">
+				<div class="container blueback rounded">
+					<div class="header-row justify-content-lg-between">
+
+						<!-- Logo
+								============================================= -->
+						<div id="logo" class="me-lg-0 col-lg-3">
+							<a href="index.html">
+								<img class="logo-default ms-0" src="images/zproject3/eyelogos/TerrezzaLogo.png"
+									alt="Terrezza Logo">
+
+							</a>
+						</div><!-- #logo end -->
+
+						<div class="header-misc col-lg-3 justify-content-lg-end ms-0">
+
+							<a href="#" data-scrollto="#section-search" data-offset="90"
+								class="text-contrast-900 p-2 me-3 bi-search fs-5"></a>
+							<a href="#"
+								class="button rounded button-border border-contrast-900 text-contrast-900 h-border-transparent h-text-contrast-100 h-bg-contrast-900"><i
+									class="fa-solid fa-phone-volume d-block d-xl-none m-0"></i><span
+									class="d-none d-xl-block">850-407-9474</span></a>
+
+						</div>
+
+						<div class="primary-menu-trigger">
+							<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+								<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+							</button>
+						</div>
+
+						<nav class="primary-menu">
+
+							<ul class="menu-container">
+								<li class="menu-item"><a class="menu-link" href="index.html">
+										<div>Home</div>
+									</a></li>
+								<li class="menu-item"><a class="menu-link" href="ServicesPage.html">
+										<div>Services</div>
+									</a></li>
+								<li class="menu-item"><a class="menu-link" href="Booking.html">
+										<div>Specialists</div>
+									</a></li>
+								<li class="menu-item"><a class="menu-link" href="Booking.html">
+										<div>Locations</div>
+									</a></li>
+							</ul>
+
+						</nav><!-- #primary-menu end -->
+
+					</div>
+				</div>
+			</div>
+			<div class="header-wrap-clone"></div>
+		</header><!-- #header end -->
+
+		<!-- Hero
+		============================================= -->
+		<section class="page-title page-title-parallax parallax scroll-detect" style="padding: 100px 0;">
+			<img src="images/zproject3/zeyeimages/Appointments.jpg" class="parallax-bg" alt="appointmentimage">
+			<div class="container">
+				<div class="page-title-row">
+
+					<div class="page-title-content">
+						<h1>Appointment</h1>
+					</div>
+
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.html" class="blacktext">Home</a></li>
+							<li class="breadcrumb-item active blacktext" aria-current="page">Appointment</li>
+						</ol>
+					</nav>
+
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Content
+		============================================= -->
+
+		<section id="content">
+
+			<div class="content-wrap py-0">
+				<div class="container padded">
+
+					<div class="heading-block text-center border-bottom-0 mb-0">
+						<h3>Schedule An Appointment</h3>
+						<span>At Terrezza Optometry, we provide the highest quality service to all our patients. Use the
+							form below to request your
+							appointment. Please indicate your preferred date and time. Please note that we will reach
+							out to you first to confirm
+							your appointment or to provide you with an alternative date. You may also call us to request
+							an appointment. Thank
+							you!​​​​​​​</span>
+					</div>
+
+				</div>
+				<div class="card border-0 shadow-lg rounded-3 blueback" style="background-color: #062639;">
+					<div class="card-body dark" style="padding: 60px">
+						<div class="form-widget" data-alert-type="inline">
+							<div class="form-result"></div>
+
+							<form id="booking-registration" class="row mb-0" action="include/form.php" method="post"
+								enctype="multipart/form-data">
+								<div class="form-process"></div>
+
+								<div class="col-12 mb-5">
+									<div id="tab-reservation"
+										class="list-group list-group-horizontal d-flex justify-content-center"
+										role="tablist">
+										<a class="list-group-item list-group-item-action w-auto mx-0 mx-sm-3 active"
+											data-bs-toggle="list" href="#tab-reservation-select-dates" role="tab">1.
+											Select Dates</a>
+										<a class="list-group-item list-group-item-action w-auto mx-0 mx-sm-3"
+											data-bs-toggle="list" href="#tab-reservation-select-room" role="tab">2.
+											Appointment Type</a>
+										<a class="list-group-item list-group-item-action w-auto mx-0 mx-sm-3"
+											data-bs-toggle="list" href="#tab-reservation-contact" role="tab">3. Contact
+											Details</a>
+
+									</div>
+								</div>
+
+								<div class="col-lg-12 mt-4 mt-lg-0">
+									<div class="tab-content" id="nav-tabContent">
+
+										<div class="tab-pane fade show active" id="tab-reservation-select-dates"
+											role="tabpanel" aria-labelledby="tab-reservation-select-dates">
+											<div class="row">
+												<div class="col-md-6">
+													<label>Date &amp; Time Picker</label>
+													<div class="form-group">
+														<div class="input-group text-start" data-target-input="nearest"
+															data-target=".datetimepicker">
+															<input type="text"
+																class="form-control datetimepicker-input datetimepicker"
+																data-target=".datetimepicker"
+																placeholder="MM/DD/YYYY 00:00 AM/PM">
+															<div class="input-group-text" data-target=".datetimepicker"
+																data-toggle="datetimepicker"><i class="bi-calendar"></i>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<label>Time Picker</label>
+													<div class="form-group">
+														<div class="input-group text-start" data-target-input="nearest"
+															data-target=".datetimepicker1">
+															<input type="text"
+																class="form-control datetimepicker-input datetimepicker1"
+																data-target=".datetimepicker1"
+																placeholder="00:00 AM/PM">
+															<div class="input-group-text" data-target=".datetimepicker1"
+																data-toggle="datetimepicker"><i class="bi-clock"></i>
+															</div>
+														</div>
+													</div>
+												</div>
+
+
+
+												<div class="col-12 text-end">
+													<a href="#"
+														class="button button-rounded button-light bg-white tab-action-btn-next text-dark">Appointment
+														Type</a>
+												</div>
+											</div>
+										</div>
+
+										<div class="tab-pane fade" id="tab-reservation-select-room" role="tabpanel"
+											aria-labelledby="tab-reservation-select-room">
+											<div class="row">
+												<div class="col-12">
+													<div class="list-group btn-group-vertical mb-3" role="group">
+														<input class="btn-check" type="radio"
+															name="booking-registration-room-type" data-item="Standard"
+															id="booking-registration-room-standard" checked
+															value="Standard Room">
+														<label for="booking-registration-room-standard"
+															class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
+															<span class="d-block">
+																<h4 class="my-0">Comprehensive Exam</h4>
+															</span>
+														</label>
+
+														<input class="btn-check" type="radio"
+															name="booking-registration-room-type" data-item="Deluxe"
+															id="booking-registration-room-deluxe" value="Deluxe Room">
+														<label for="booking-registration-room-deluxe"
+															class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
+															<span class="d-block">
+																<h4 class="my-0">Pediatric Eye Exam</h4>
+
+															</span>
+														</label>
+
+														<input class="btn-check" type="radio"
+															name="booking-registration-room-type" data-item="Deluxe"
+															id="booking-registration-room-super-deluxe"
+															value="Super Deluxe Room">
+														<label for="booking-registration-room-super-deluxe"
+															class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
+															<span class="d-block">
+																<h4 class="my-0">Contact Lens Fitting</h4>
+
+															</span>
+														</label>
+														<input class="btn-check" type="radio"
+															name="booking-registration-room-type" data-item="Deluxe"
+															id="prescription-glasses" value="Super Deluxe Room">
+														<label for="booking-registration-room-super-deluxe"
+															class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
+															<span class="d-block">
+																<h4 class="my-0">Prescription Glasses</h4>
+
+															</span>
+														</label>
+														<input class="btn-check" type="radio"
+															name="booking-registration-room-type" data-item="Deluxe"
+															id="specialized-testing" value="Super Deluxe Room">
+														<label for="booking-registration-room-super-deluxe"
+															class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
+															<span class="d-block">
+																<h4 class="my-0">Specialized Testing</h4>
+
+															</span>
+														</label>
+														<input class="btn-check" type="radio"
+															name="booking-registration-room-type" data-item="Deluxe"
+															id="emergencyeye-care" value="Super Deluxe Room">
+														<label for="booking-registration-room-super-deluxe"
+															class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
+															<span class="d-block">
+																<h4 class="my-0">Emergency Eye Care</h4>
+
+															</span>
+														</label>
+													</div>
+												</div>
+												<div class="col-12 text-end">
+													<a href="#"
+														class="button button-rounded button-light bg-white tab-action-btn-next text-dark">Contact
+														Details</a>
+												</div>
+											</div>
+										</div>
+
+										<div class="tab-pane fade" id="tab-reservation-contact" role="tabpanel"
+											aria-labelledby="tab-reservation-contact">
+											<div class="row">
+												<div class="col-6 mb-4">
+													<label>First Name:</label>
+													<input type="text" name="booking-registration-first-name"
+														id="booking-registration-first-name"
+														class="form-control border-form-control required" value=""
+														placeholder="Enter Your First Name">
+												</div>
+												<div class="col-6 mb-4">
+													<label>Last Name:</label>
+													<input type="text" name="booking-registration-last-name"
+														id="booking-registration-last-name"
+														class="form-control border-form-control required" value=""
+														placeholder="Enter Your Last Name">
+												</div>
+												<div class="col-12 mb-4">
+													<label>Email Address:</label>
+													<input type="email" name="booking-registration-email"
+														id="booking-registration-email"
+														class="form-control border-form-control required" value=""
+														placeholder="Enter Your Email Address">
+												</div>
+												<div class="col-12 mb-4">
+													<label>Full Address:</label>
+													<input type="text" name="booking-registration-address"
+														id="booking-registration-address"
+														class="form-control border-form-control required" value=""
+														placeholder="Enter Your Address">
+												</div>
+												<div class="col-12 mb-4">
+													<label>Post Code:</label>
+													<input type="text" name="booking-registration-postal"
+														id="booking-registration-postal"
+														class="form-control border-form-control required" value=""
+														placeholder="Enter Your Postal Code">
+												</div>
+												<div class="col-12 mb-4">
+													<label>Phone:</label><br>
+													<input type="text" name="booking-registration-phone"
+														id="booking-registration-phone"
+														class="form-control border-form-control required" value=""
+														placeholder="Enter Your Phone Number">
+												</div>
+												<div class="col-12 text-end">
+													<button type="submit" name="booking-registration-submit"
+														class="button button-rounded button-light bg-white text-dark">Book
+														Now</button>
+												</div>
+											</div>
+										</div>
+
+
+									</div>
+								</div>
+								<!-- side widget -->
+
+
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<div class="section m-0">
+					<div class="container">
+						<div class="heading-block text-center border-bottom-0 mb-6">
+							<h3>Questions Before Booking</h3>
+							<span>Take a few minutes to read thorugh our appointment types to know which appointment
+								will best meet your needs.</span>
+						</div>
+						<div id="faqs" class="faqs row">
+							<div class="col-lg-6">
+
+								<h4><strong class="color Q">Q.</strong> What is a Comprehensive Exam?</h4>
+								<p>A “routine eye exam” takes place when you come for an eye examination without any
+									underlying medical conditions that
+									affect your eyes. The doctor screens the eyes and will check your vision for
+									corrective lenses.</p>
+
+								<div class="line line-sm"></div>
+
+								<h4><strong class="color Q">Q.</strong> What is a Pediatric Eye Exam?</h4>
+								<p>We see children as early as one year old. We also offer a Myopia Management program
+									for children with near-sightedness.</p>
+
+								<div class="line line-sm"></div>
+
+								<h4><strong class="color Q">Q.</strong> What is a Prescription Consultation?</h4>
+								<p>We can print out a copy of your eyeglass prescription at any time at your request
+									once your exam is complete.</p>
+							</div>
+
+							<div class="col-lg-6">
+
+								<h4><strong class="color Q">Q.</strong> What is a Contact Lens Fitting?</h4>
+								<p>Wearing contact lenses gives patients the flexibility and freedom to live life to the
+									fullest, without some of the
+									difficulties presented by wearing glasses.</p>
+
+								<div class="line line-sm"></div>
+
+								<h4><strong class="color Q">Q.</strong> What is Emergency Eye Care?</h4>
+								<p>Eye emergencies cover a range of incidents and conditions such as; trauma, cuts,
+									scratches, foreign objects in the eye,
+									and blunt injuries to the eye or eyelid, etc.<br>**Please do not submit a contact
+									form if you are experiencing an emergency. Please call one of our offices directly
+									for
+									assistance. If your emergency is life-threatening, please call 911.</p>
+
+								<div class="line line-sm"></div>
+
+								<h4><strong class="color Q">Q.</strong> What is Specialized Testing?</h4>
+								<p class="mb-0">Evaluation of a medical-related complaint or follow-up of existing
+									conditions like Diabetes, Dry Eyes, Eye Allergies,
+									Floaters and/or Flashes, Glaucoma, High-Risk Medications (Auto Immune, Systemic
+									Illness Treatment), Cataracts, Macular
+									Degeneration.</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section dark bg-color my-0 blueback">
+					<div class="container ">
+						<div class="row align-items-center justify-content-between">
+							<div class="col-md-4 mt-4">
+								<img src="demos/doctors/images/icons/wave.svg" alt="..."
+									class="position-absolute top-0 start-0 translate-middle d-none d-md-block"
+									width="36">
+
+								<h3 class="display-6">Get in touch with Us.</h3>
+								<p>
+									Nine Mile Crossing (850-944-1188)<br>Milton
+									(850-623-0319)<br>Palafox(850-434-2060)<br>Fairfield (850-456-5059)<br>Navarre
+									(850-407-9711)<br>Foley, AL (251-943-5115)<br>Fairhope, AL (251-383-2052)</p>
+
+								<div class="divider divider-xs fw-light font-body text-uppercase mb-5 op-05 ms-0"
+									style="--cnvs-divider-border-color: rgba(var(--cnvs-contrast-rgb), 0.2)">
+									<div class="divider-text">Or</div>
+								</div>
+
+								<h3 class="fs-6 fw-light text-uppercase op-07 mb-2">Give us a Quick Call</h3>
+								<h2 class="display-4">850-407-9474</h2>
+							</div>
+
+							<div class="col-md-6">
+								<div class="form-widget">
+
+									<div class="form-result"></div>
+
+									<form class="row mb-0" id="template-contactform" name="template-contactform"
+										action="include/form.php" method="post">
+										<div class="form-process">
+											<div class="css3-spinner">
+												<div class="css3-spinner-scaler"></div>
+											</div>
+										</div>
+
+										<div class="col-12 form-group">
+											<input type="text" id="template-contactform-name"
+												name="template-contactform-name" value=""
+												class="form-control border-form-control border-light border-opacity-50 py-3 required"
+												placeholder="Full Name..">
+										</div>
+
+										<div class="col-12 form-group">
+											<input type="email" id="template-contactform-email"
+												name="template-contactform-email" value=""
+												class="email form-control border-form-control border-light border-opacity-50 py-3 required "
+												placeholder="Email Address..">
+										</div>
+
+										<div class="col-12 form-group">
+											<input type="text" id="template-contactform-phone"
+												name="template-contactform-phone" value=""
+												class="form-control border-form-control border-light border-opacity-50 py-3"
+												placeholder="Phone Number..">
+										</div>
+
+										<div class="col-12 form-group">
+											<textarea
+												class="required form-control border-form-control border-light border-opacity-50 py-3"
+												id="template-contactform-message" name="template-contactform-message"
+												rows="2" cols="30" placeholder="Type Your Message Here.."></textarea>
+										</div>
+
+										<div class="col-12 form-group d-none">
+											<input type="text" id="template-contactform-botcheck"
+												name="template-contactform-botcheck" value=""
+												class="form-control border-form-control border-light border-opacity-50 py-4">
+										</div>
+
+										<div class="col-12 form-group">
+											<button
+												class="button button-large button-light h-text-dark h-bg-color-2 rounded ms-0 mt-3"
+												type="submit" id="template-contactform-submit"
+												name="template-contactform-submit" value="submit">Send Message</button>
+										</div>
+
+										<input type="hidden" name="prefix" value="template-contactform-">
+									</form>
+
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+					<div>
+
+
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+		<!-- Footer
+					============================================= -->
+		<footer id="footer" class="bg-color dark border-width-1 blueback">
+			<div class="container ">
+
+				<!-- Footer Widgets
+							============================================= -->
+				<div class="footer-widgets-wrap">
+					<div class="row gx-4 gy-5">
+
+						<div class="col-lg-3 col-6">
+
+							<div class="widget widget_links widget-li-noicon">
+
+								<h4 class="text-uppercase mb-4">How we Work</h4>
+
+								<ul>
+									<li><a href="#">Documentation</a></li>
+									<li><a href="#">Feedback</a></li>
+									<li><a href="#">Plugins</a></li>
+									<li><a href="#">Support Forums</a></li>
+									<li><a href="#">Themes</a></li>
+									<li><a href="#">Canvas Blog</a></li>
+								</ul>
+
+							</div>
+
+						</div>
+
+						<div class="col-lg-3 col-6">
+
+							<div class="widget widget_links widget-li-noicon">
+
+								<h4 class="text-uppercase mb-4">About Us</h4>
+
+								<ul>
+									<li><a href="#">Feedback</a></li>
+									<li><a href="#">Documentation</a></li>
+									<li><a href="#">Plugins</a></li>
+									<li><a href="#">Support Forums</a></li>
+									<li><a href="#">Themes</a></li>
+									<li><a href="#">Contact Us</a></li>
+								</ul>
+
+							</div>
+
+						</div>
+
+						<div class="col-lg-3 col-sm-6">
+
+							<div class="widget widget_links widget-li-noicon">
+
+								<h4 class="text-uppercase mb-4">How we do</h4>
+
+								<ul>
+									<li><a href="#">Plugins</a></li>
+									<li><a href="#">Support Forums</a></li>
+									<li><a href="#">Themes</a></li>
+									<li><a href="#">Canvas Blog</a></li>
+									<li><a href="#">Contact Us</a></li>
+								</ul>
+
+							</div>
+
+						</div>
+
+						<div class="col-lg-3 col-sm-6">
+
+							<div class="widget">
+
+								<h4 class="text-uppercase mb-4">Need Help?</h4>
+
+								<ul class="list-unstyled">
+									<li class="mb-3">
+										<a href="#" class="d-flex">
+											<i class="me-3 bi-telephone-fill"></i>850-407-9474
+										</a>
+									</li>
+									<li class="mb-3">
+										<a href="#" class="d-flex">
+											<i class="me-3 bi-envelope-fill"></i>terrezzaopticalgroup@gmail.com
+										</a>
+									</li>
+									<li class="mb-3">
+										<a href="#" class="d-flex">
+											<i class="me-3 bi-geo-alt-fill"></i>121 Baptist Way, Ste 1200, Pensacola, FL
+											32503
+										</a>
+									</li>
+									<li class="mb-3 d-flex">
+										<i class="me-3 bi-calendar-week-fill"></i>Mon - Fri | 08:00 - 05:00
+									</li>
+								</ul>
+
+							</div>
+
+						</div>
+
+					</div>
+				</div><!-- .footer-widgets-wrap end -->
+			</div>
+
+			<!-- Copyrights
+						============================================= -->
+			<div id="copyrights" class="bg-transparent border-top op-08">
+				<div class="container">
+
+					<div class="row justify-content-md-between">
+						<div class="col-md-auto">
+							Copyrights &copy; 2023 All Rights Reserved by SemiColonWeb
+						</div>
+						<div class="col-md-auto">
+							<div class="copyright-links"><a
+									href="https://1.envato.market/c/1309643/480739/4415?u=http%3A%2F%2Fthemeforest.net%2Fuser%2Fsemicolonweb%2Fportfolio"
+									target="_blank">Portfolio</a> / <a href="http://support.semicolonweb.com"
+									target="_blank">Support</a></div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/plugins.min.js"></script>
+	<script src="js/functions.bundle.js"></script>
+
+	<!-- Select Splitter Plugin -->
+	<script src="js/components/selectsplitter.js"></script>
+	<script src="js/components/bs-select.js"></script>
+
+	<!-- DatePicker JS -->
+	<script src="js/components/datepicker.js"></script>
+	<script src="js/components/timepicker.js"></script>
+	<script src="js/components/datepicker.js"></script>
+
+	<!-- Include Date Range Picker -->
+	<script src="js/components/daterangepicker.js"></script>
+
+	<script>
+		jQuery(function () {
+			jQuery('.component-datepicker.default').datepicker({
+				autoclose: true,
+				startDate: "today",
+			});
+
+			jQuery('.component-datepicker.today').datepicker({
+				autoclose: true,
+				startDate: "today",
+				todayHighlight: true
+			});
+
+			jQuery('.component-datepicker.past-enabled').datepicker({
+				autoclose: true,
+			});
+
+			jQuery('.component-datepicker.format').datepicker({
+				autoclose: true,
+				format: "dd-mm-yyyy",
+			});
+
+			jQuery('.component-datepicker.autoclose').datepicker();
+
+			jQuery('.component-datepicker.disabled-week').datepicker({
+				autoclose: true,
+				daysOfWeekDisabled: "0"
+			});
+
+			jQuery('.component-datepicker.highlighted-week').datepicker({
+				autoclose: true,
+				daysOfWeekHighlighted: "0"
+			});
+
+			jQuery('.component-datepicker.mnth').datepicker({
+				autoclose: true,
+				minViewMode: 1,
+				format: "mm/yy"
+			});
+
+			jQuery('.component-datepicker.multidate').datepicker({
+				multidate: true,
+				multidateSeparator: " , "
+			});
+
+			jQuery('.component-datepicker.input-daterange').datepicker({
+				autoclose: true
+			});
+
+			jQuery('.component-datepicker.inline-calendar').datepicker();
+
+			jQuery('.datetimepicker').datetimepicker({
+				showClose: true
+			});
+
+			jQuery('.datetimepicker1').datetimepicker({
+				format: 'LT',
+				showClose: true
+			});
+
+			jQuery('.datetimepicker2').datetimepicker({
+				inline: true,
+				sideBySide: true
+			});
+
+			jQuery('.datetimepicker3,.datetimepicker4').datetimepicker();
+
+			// .daterange1
+			jQuery(".daterange1").daterangepicker({
+				"buttonClasses": "button button-rounded button-mini m-0",
+				"applyClass": "button-color",
+				"cancelClass": "button-light"
+			});
+
+			// .daterange2
+			jQuery(".daterange2").daterangepicker({
+				"opens": "center",
+				timePicker: true,
+				timePickerIncrement: 30,
+				locale: {
+					format: 'MM/DD/YYYY h:mm A'
+				},
+				"buttonClasses": "button button-rounded button-mini m-0",
+				"applyClass": "button-color",
+				"cancelClass": "button-light"
+			});
+
+			// .daterange3
+			jQuery(".daterange3").daterangepicker({
+				singleDatePicker: true,
+				showDropdowns: true
+			},
+				function (start, end, label) {
+					var years = moment().diff(start, 'years');
+					alert("You are " + years + " years old.");
+				});
+
+			// reportrange
+			function cb(start, end) {
+				jQuery(".reportrange span").html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+			}
+			cb(moment().subtract(29, 'days'), moment());
+
+			jQuery(".reportrange").daterangepicker({
+				"buttonClasses": "button button-rounded button-mini m-0",
+				"applyClass": "button-color",
+				"cancelClass": "button-light",
+				ranges: {
+					'Today': [moment(), moment()],
+					'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+					'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+					'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+					'This Month': [moment().startOf('month'), moment().endOf('month')],
+					'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+				}
+			}, cb);
+
+			// .daterange4
+			jQuery(".daterange4").daterangepicker({
+				autoUpdateInput: false,
+				locale: {
+					cancelLabel: 'Clear'
+				},
+				"buttonClasses": "button button-rounded button-mini m-0",
+				"applyClass": "button-color",
+				"cancelClass": "button-light"
+			});
+
+			jQuery(".daterange4").on('apply.daterangepicker', function (ev, picker) {
+				jQuery(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+			});
+
+			jQuery(".daterange4").on('cancel.daterangepicker', function (ev, picker) {
+				jQuery(this).val('');
+			});
+
+		});
+	</script>
+
+	<script>
+		jQuery(document).ready(function () {
+			jQuery('.tab-action-btn-next').on('click', function (e) {
+				let elementTab = jQuery(this).parents('.tab-pane');
+				jQuery('#booking-registration').valid();
+				let errors = elementTab.find('.required.error').length;
+				if (errors > 0) {
+					jQuery('#tab-reservation > .active').nextAll('a').addClass('disabled');
+					return false;
+				} else {
+					jQuery('#tab-reservation > .active').next('a').removeClass('disabled').trigger('click');
+					let nextTabEl = jQuery('#tab-reservation > .active').next('a').removeClass('disabled'),
+						tab = new bootstrap.Tab(nextTabEl.get(0));
+
+					tab.show();
+					e.preventDefault();
+					return false;
+				}
+			});
+
+			let date = new Date(),
+				today = new Date(date.getFullYear(), date.getMonth(), date.getDate() + 1),
+				tomorrow = new Date(date.getFullYear(), date.getMonth(), date.getDate() + 2),
+				checkIn = jQuery('#booking-registration-check-in'),
+				checkOut = jQuery('#booking-registration-check-out');
+
+			jQuery('.travel-date-group').datepicker({
+				autoclose: true,
+				todayHighlight: true,
+				startDate: "0 days",
+				format: "mm/dd/yyyy"
+			}).on('changeDate', function () {
+				let dayCheckin = new Date(checkIn.prop('value')),
+					dayCheckout = new Date(checkOut.prop('value')),
+					nights = (dayCheckout.getTime() - dayCheckin.getTime()) / (1000 * 3600 * 24);
+				jQuery(".time-value").html(nights + ' Nights');
+			});
+
+			jQuery('#booking-registration-card-exp').datepicker({
+				autoclose: true,
+				todayHighlight: true,
+				startDate: "0 days",
+				format: "mm/yyyy"
+			});
+
+			checkIn.datepicker('setDate', today);
+			checkOut.datepicker('setDate', tomorrow);
+
+			let elemRoomType = 'Standard Room',
+				roomType = jQuery('input[name="booking-registration-room-type"]'),
+				elemRooms = '',
+				rooms = jQuery('select[name="booking-registration-rooms"]'),
+				elempersons = '',
+				persons = jQuery('select[name="booking-registration-persons"]');
+
+
+			roomType.change(function () {
+				elemRoomType = jQuery(this).prop('value');
+				jQuery(".room-type-value").html(elemRoomType);
+			});
+
+			rooms.change(function () {
+				elemRooms = jQuery(this).prop('value');
+				jQuery(".rooms-value").html(elemRooms);
+			});
+
+			persons.change(function () {
+				elempersons = jQuery(this).prop('value');
+				jQuery(".persons-value").html(elempersons);
+			});
+
+			jQuery('#booking-registration').on('formSubmitSuccess', function () {
+				jQuery('.travel-date-group input').datepicker('setDate', today);
+				jQuery(".room-type-value").html('Standard Room');
+				jQuery(".time-value").html('Choose Date');
+				jQuery(".rooms-value").html('1 Room');
+				jQuery(".persons-value").html('1 Person');
+				jQuery('#tab-reservation-payment').removeClass('active');
+			});
+		});
+	</script>
+</body>
+
+</html>

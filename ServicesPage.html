@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta name="author" content="SemiColonWeb">
+	<meta name="description"
+		content="Get Canvas to build powerful websites easily with the Highly Customizable &amp; Best Selling Bootstrap Template, today.">
+
+	<!-- Font Imports -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Rubik:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Core Style -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Font Icons -->
+	<link rel="stylesheet" href="css/font-icons.css">
+
+	<!-- Plugins/Components CSS -->
+	<link rel="stylesheet" href="css/components/bs-select.css">
+
+	<!-- Niche Demos -->
+	<link rel="stylesheet" href="demos/doctors/doctors.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Document Title
+	============================================= -->
+	<title>Doctors | Canvas</title>
+	<style>
+		.block-card-9 .grid-inner .btn-hover {
+			opacity: 0;
+			display: block;
+			transition: opacity .3s ease, transform .3s .1s ease;
+			margin-top: 15px;
+			position: absolute;
+			transform: translateY(0);
+		}
+
+		.block-card-9 .grid-inner:hover .btn-hover {
+			opacity: 1;
+			transform: translateY(-5px);
+		}
+
+		.block-card-9 .grid-inner .grid-image {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-size: cover;
+			background-position: center center;
+		}
+
+		.block-card-9 .grid-inner:hover .grid-image {
+			-webkit-animation: kenburns 20s ease-out both;
+			animation: kenburns 20s ease-out both;
+		}
+
+		.block-card-9 .grid-inner .grid-icon,
+		.block-card-9 .grid-inner .grid-content .slide {
+			transition: transform .3s ease;
+		}
+
+		.block-card-9 .grid-inner:hover .grid-content {
+			transform: translateY(-45px);
+		}
+
+
+
+		.slide2 {}
+
+		.block-card-9 .grid-inner:hover .grid-icon {
+			transform: translateY(-5px);
+		}
+
+		@-webkit-keyframes kenburns {
+			0% {
+				-webkit-transform: scale(1) translate(0, 0);
+				transform: scale(1) translate(0, 0);
+				-webkit-transform-origin: 84% 84%;
+				transform-origin: 84% 84%;
+			}
+
+			100% {
+				-webkit-transform: scale(1.25) translate(20px, 15px);
+				transform: scale(1.25) translate(20px, 15px);
+				-webkit-transform-origin: right bottom;
+				transform-origin: right bottom;
+			}
+		}
+
+		@keyframes kenburns {
+			0% {
+				-webkit-transform: scale(1) translate(0, 0);
+				transform: scale(1) translate(0, 0);
+				-webkit-transform-origin: 84% 84%;
+				transform-origin: 84% 84%;
+			}
+
+			100% {
+				-webkit-transform: scale(1.25) translate(20px, 15px);
+				transform: scale(1.25) translate(20px, 15px);
+				-webkit-transform-origin: right bottom;
+				transform-origin: right bottom;
+			}
+		}
+	</style>
+
+</head>
+
+<!-- stretched (body)
+============================================= -->
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper">
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="header-size-md dark transparent-header floating-header" data-sticky-shrink="false"
+			data-responsive-class="not-dark">
+			<div id="header-wrap" class="border-0">
+				<div class="container blueback rounded">
+					<div class="header-row justify-content-lg-between">
+
+						<!-- Logo
+								============================================= -->
+						<div id="logo" class="me-lg-0 col-lg-3">
+							<a href="index.html">
+								<img class="logo-default ms-0" src="images/zproject3/eyelogos/TerrezzaLogo.png"
+									alt="Terrezza Logo">
+
+							</a>
+						</div><!-- #logo end -->
+
+						<div class="header-misc col-lg-3 justify-content-lg-end ms-0">
+
+							<a href="#" data-scrollto="#section-search" data-offset="90"
+								class="text-contrast-900 p-2 me-3 bi-search fs-5"></a>
+							<a href="#"
+								class="button rounded button-border border-contrast-900 text-contrast-900 h-border-transparent h-text-contrast-100 h-bg-contrast-900"><i
+									class="fa-solid fa-phone-volume d-block d-xl-none m-0"></i><span
+									class="d-none d-xl-block">850-407-9474</span></a>
+
+						</div>
+
+						<div class="primary-menu-trigger">
+							<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+								<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+							</button>
+						</div>
+
+						<nav class="primary-menu">
+
+							<ul class="menu-container">
+								<li class="menu-item"><a class="menu-link" href="index.html">
+										<div>Home</div>
+									</a></li>
+								<li class="menu-item"><a class="menu-link" href="ServicesPage.html">
+										<div>Services</div>
+									</a></li>
+								<li class="menu-item"><a class="menu-link" href="ServicesPage.html">
+										<div>Specialists</div>
+									</a></li>
+								<li class="menu-item"><a class="menu-link" href="ServicesPage.html">
+										<div>Locations</div>
+									</a></li>
+							</ul>
+
+						</nav><!-- #primary-menu end -->
+
+					</div>
+				</div>
+			</div>
+			<div class="header-wrap-clone"></div>
+		</header><!-- #header end -->
+
+		<!-- Hero
+		============================================= -->
+		<section class="page-title page-title-parallax parallax scroll-detect" style="padding: 100px 0;">
+			<img src="images/zproject3/zeyeimages/ServicesHearder.jpg" class="parallax-bg" alt="servicesimage">
+			<div class="container">
+				<div class="page-title-row">
+
+					<div class="page-title-content">
+						<h1 class="blacktext">Services</h1>
+					</div>
+
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.html" class="blacktext">Home</a></li>
+							<li class="breadcrumb-item active blacktext" aria-current="page">Services</li>
+						</ol>
+					</nav>
+
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Content
+		============================================= -->
+
+		<section id="content3">
+
+			<div class="content-wrap py-0">
+				<div class="container padded">
+
+					<div class="heading-block text-center border-bottom-0 mb-0">
+						<h3>Eye Care Services in Pensacola, FL</h3>
+						<span>We believe that healthy eyesight is essential to your overall well-being, and we are here
+							to help you achieve optimal eye health. Whether you are seeking routine eye exams, contact
+							lenses, or treatment for an eye condition, we have the expertise and technology to meet your
+							needs.</span>
+					</div>
+
+				</div>
+				<div id="wrapper2">
+
+					<!-- Content
+						============================================= -->
+					<section id="content" class="servicepadded">
+						<div class="content-wrap min-vh-100 d-flex align-items-center">
+							<div class="container">
+
+								<div class="row block-card-9 col-mb-50">
+
+									<div class="col-lg-4 min-vh-75">
+										<div class="grid-inner rounded-3 h-100">
+											<div class="grid-image lazy"
+												data-bg="images/zproject3/zeyeimages/RoutineEyeExam.jpg">
+											</div>
+											<div class="bg-overlay">
+												<div
+													class="bg-overlay-content flex-column justify-content-between align-items-start p-5 dark">
+													<div class="grid-icon">
+														<img src="images/zproject3/Visionicons/vision.png" alt="Image"
+															width="45">
+													</div>
+													<div class="slide">
+														<h3 class="fw-medium h2">Comprehensive Exams</h3>
+														<p class="servetext btn-hover">A
+															“routine eye exam” take place when you come for an eye
+															examination without any underlying medical conditions
+															that affect
+															the eyes. The doctor screens the eyes for diseases and
+															will check your vision for corrective lenses such as
+															glasses
+															and/or contact lenses.</p>
+
+													</div>
+													<div class="grid-content">
+
+
+														<a href="Booking.html"
+															class="icon-stacked rounded-circle bg-white text-danger text-center mb-0 btn-hover h5">
+
+															<i class="bi-arrow-right bluetext"></i>
+
+
+														</a>
+													</div>
+												</div>
+												<div class="bg-overlay-bg"
+													style="background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, #234C90 100%);">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 min-vh-75">
+										<div class="grid-inner rounded-3 h-100">
+											<div class="grid-image lazy"
+												data-bg="images/zproject3/zeyeimages/PediatricExams.jpg">
+											</div>
+											<div class="bg-overlay">
+												<div
+													class="bg-overlay-content flex-column justify-content-between align-items-start p-5 dark">
+													<div class="grid-icon">
+														<img src="images/zproject3/Visionicons/eye-examination.png"
+															alt="Image" width="45">
+													</div>
+													<div class="slide">
+														<h3 class="fw-medium h2">Pediatric Eye Exams</h3>
+														<p class="servetext btn-hover">Regular eye exams are
+															important for children since their eyes can change
+															significantly in as little as a year as the
+															muscles and tissue develop. Good eyesight is critical
+															for a child’s life and achievements since success in
+															school is
+															closely tied to eye health.</p>
+
+													</div>
+													<div class="grid-content">
+
+
+														<a href="Booking.html"
+															class="icon-stacked rounded-circle bg-white text-center mb-0 btn-hover h5"
+															style="color: #234C90"><i class="bi-arrow-right"></i><br>
+
+
+														</a>
+
+													</div>
+												</div>
+												<div class="bg-overlay-bg"
+													style="background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, #234C90 100%);">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 min-vh-75">
+										<div class="grid-inner rounded-3 h-100">
+											<div class="grid-image lazy"
+												data-bg="images/zproject3/zeyeimages/ContactLens.jpg">
+											</div>
+											<div class="bg-overlay">
+												<div
+													class="bg-overlay-content flex-column justify-content-between align-items-start p-5 dark">
+													<div class="grid-icon">
+														<img src="images/zproject3/Visionicons/contact-lens.png"
+															alt="Image" width="45">
+													</div>
+													<div class="slide">
+														<h3 class="fw-medium h2">Contact Lens Fitting</h3>
+														<p class="servetext btn-hover">Wearing contact lenses gives
+															patients
+															the flexibility and freedom to live life to the fullest,
+															without some of the
+															difficulties presented by wearing glasses.<br>There are
+															lots of different contact lenses to choose from, with
+															two of the most popular being daily disposables and
+															toric lenses. </p>
+													</div>
+													<div class="grid-content">
+
+
+														<a href="Booking.html"
+															class="icon-stacked rounded-circle bg-white text-success text-center mb-0 btn-hover h5"><i
+																class="bi-arrow-right bluetext"></i>
+
+														</a>
+													</div>
+												</div>
+												<div class="bg-overlay-bg"
+													style="background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, #234C90 100%);">
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="content4">
+						<div class="content-wrap min-vh-100 d-flex align-items-center">
+							<div class="container">
+
+								<div class="row block-card-9 col-mb-50">
+
+									<div class="col-lg-4 min-vh-75">
+										<div class="grid-inner rounded-3 h-100">
+											<div class="grid-image lazy"
+												data-bg="images/zproject3/zeyeimages/PrescriptionGlasses.jpg">
+											</div>
+											<div class="bg-overlay">
+												<div
+													class="bg-overlay-content flex-column justify-content-between align-items-start p-5 dark">
+													<div class="grid-icon">
+														<img src="images/zproject3/Visionicons/eyeglasses.png"
+															alt="Image" width="60">
+													</div>
+													<div class="slide">
+														<h3 class="fw-medium h2">Prescription Glasses</h3>
+														<p class="servetext btn-hover">We can print out a copy of your
+															eyeglass prescription at any time at your request once
+															your exam is complete. We fit
+															distance vision only, near vision only, bifocal,
+															trifocal, progressive, occupational, computer,
+															anti-fatigue, safety,
+															sports, sunglasses and recreational/hobby lenses</p>
+													</div>
+													<div class="grid-content">
+
+
+														<a href="Booking.html"
+															class="icon-stacked rounded-circle bg-white text-danger text-center mb-0 btn-hover h5">
+															<i class="bi-arrow-right bluetext"></i>
+														</a>
+													</div>
+												</div>
+												<div class="bg-overlay-bg"
+													style="background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, #234C90 100%);">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 min-vh-75">
+										<div class="grid-inner rounded-3 h-100">
+											<div class="grid-image lazy"
+												data-bg="images/zproject3/zeyeimages/EmercencyEyeCare.jpeg">
+											</div>
+											<div class="bg-overlay">
+												<div
+													class="bg-overlay-content flex-column justify-content-between align-items-start p-5 dark">
+													<div class="grid-icon">
+														<img src="images/zproject3/Visionicons/band-aid.png" alt="Image"
+															width="45">
+													</div>
+													<div class="slide">
+														<h3 class="fw-medium h2">Emergency Eye Care</h3>
+														<p class="servetext btn-hover">Things happen, and a sudden
+															injury can
+															cause pain and severe health complications.<br>Eye
+															emergencies cover a range of incidents and conditions
+															such as; trauma, cuts, scratches, foreign objects in the
+															eye,
+															burns, chemical exposure, photic retinopathy, and blunt
+															injuries to the eye or eyelid.</p>
+
+													</div>
+													<div class="grid-content">
+
+
+														<a href="Booking.html"
+															class="icon-stacked rounded-circle bg-white text-success text-center mb-0 btn-hover h5"><i
+																class="bi-arrow-right bluetext"></i>
+
+														</a>
+
+													</div>
+
+
+												</div>
+												<div class="bg-overlay-bg"
+													style="background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, #234C90 100%);">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 min-vh-75">
+										<div class="grid-inner rounded-3 h-100">
+											<div class="grid-image lazy"
+												data-bg="images/zproject3/zeyeimages/SpecializedTesting.jpg">
+											</div>
+											<div class="bg-overlay">
+												<div
+													class="bg-overlay-content flex-column justify-content-between align-items-start p-5 dark">
+													<div class="grid-icon">
+														<img src="images/zproject3/Visionicons/eye.png" alt="Image"
+															width="45">
+													</div>
+													<div class="slide">
+														<h3 class="fw-medium h2">Specialized Testing</h3>
+														<p class="servetext btn-hover">We offer Optomap, Ocular
+															Coherence
+															Tomography (OCT), Visual Field, MacuLogix, LipiFlow® and
+															ForeseeHome (Home AMD
+															monitoring) at all locations.</p>
+
+													</div>
+													<div class="grid-content">
+
+
+														<a href="Booking.html"
+															class="icon-stacked rounded-circle bg-white text-success text-center mb-0 btn-hover h5"><i
+																class="bi-arrow-right bluetext"></i>
+
+														</a>
+
+													</div>
+												</div>
+												<div class="bg-overlay-bg"
+													style="background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, #234C90 100%);">
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</section><!-- #content end -->
+
+
+				</div>
+
+				<div class="section dark bg-color my-0 blueback">
+					<div class="container ">
+						<div class="row align-items-center justify-content-between">
+							<div class="col-md-4 mt-4">
+								<img src="demos/doctors/images/icons/wave.svg" alt="..."
+									class="position-absolute top-0 start-0 translate-middle d-none d-md-block"
+									width="36">
+
+								<h3 class="display-6">Get in touch with Us.</h3>
+								<p>
+									Nine Mile Crossing (850-944-1188)<br>Milton
+									(850-623-0319)<br>Palafox(850-434-2060)<br>Fairfield (850-456-5059)<br>Navarre
+									(850-407-9711)<br>Foley, AL (251-943-5115)<br>Fairhope, AL (251-383-2052)</p>
+
+								<div class="divider divider-xs fw-light font-body text-uppercase mb-5 op-05 ms-0"
+									style="--cnvs-divider-border-color: rgba(var(--cnvs-contrast-rgb), 0.2)">
+									<div class="divider-text">Or</div>
+								</div>
+
+								<h3 class="fs-6 fw-light text-uppercase op-07 mb-2">Give us a Quick Call</h3>
+								<h2 class="display-4">850-407-9474</h2>
+							</div>
+
+							<div class="col-md-6">
+								<div class="form-widget">
+
+									<div class="form-result"></div>
+
+									<form class="row mb-0" id="template-contactform" name="template-contactform"
+										action="include/form.php" method="post">
+										<div class="form-process">
+											<div class="css3-spinner">
+												<div class="css3-spinner-scaler"></div>
+											</div>
+										</div>
+
+										<div class="col-12 form-group">
+											<input type="text" id="template-contactform-name"
+												name="template-contactform-name" value=""
+												class="form-control border-form-control border-light border-opacity-50 py-3 required"
+												placeholder="Full Name..">
+										</div>
+
+										<div class="col-12 form-group">
+											<input type="email" id="template-contactform-email"
+												name="template-contactform-email" value=""
+												class="email form-control border-form-control border-light border-opacity-50 py-3 required "
+												placeholder="Email Address..">
+										</div>
+
+										<div class="col-12 form-group">
+											<input type="text" id="template-contactform-phone"
+												name="template-contactform-phone" value=""
+												class="form-control border-form-control border-light border-opacity-50 py-3"
+												placeholder="Phone Number..">
+										</div>
+
+										<div class="col-12 form-group">
+											<textarea
+												class="required form-control border-form-control border-light border-opacity-50 py-3"
+												id="template-contactform-message" name="template-contactform-message"
+												rows="2" cols="30" placeholder="Type Your Message Here.."></textarea>
+										</div>
+
+										<div class="col-12 form-group d-none">
+											<input type="text" id="template-contactform-botcheck"
+												name="template-contactform-botcheck" value=""
+												class="form-control border-form-control border-light border-opacity-50 py-4">
+										</div>
+
+										<div class="col-12 form-group">
+											<button
+												class="button button-large button-light h-text-dark h-bg-color-2 rounded ms-0 mt-3"
+												type="submit" id="template-contactform-submit"
+												name="template-contactform-submit" value="submit">Send Message</button>
+										</div>
+
+										<input type="hidden" name="prefix" value="template-contactform-">
+									</form>
+
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+					<div>
+
+
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+		<!-- Footer
+						============================================= -->
+		<footer id="footer" class="bg-color dark border-width-1 blueback">
+			<div class="container ">
+
+				<!-- Footer Widgets
+								============================================= -->
+				<div class="footer-widgets-wrap">
+					<div class="row gx-4 gy-5">
+
+						<div class="col-lg-3 col-6">
+
+							<div class="widget widget_links widget-li-noicon">
+
+								<h4 class="text-uppercase mb-4">How we Work</h4>
+
+								<ul>
+									<li><a href="#">Documentation</a></li>
+									<li><a href="#">Feedback</a></li>
+									<li><a href="#">Plugins</a></li>
+									<li><a href="#">Support Forums</a></li>
+									<li><a href="#">Themes</a></li>
+									<li><a href="#">Canvas Blog</a></li>
+								</ul>
+
+							</div>
+
+						</div>
+
+						<div class="col-lg-3 col-6">
+
+							<div class="widget widget_links widget-li-noicon">
+
+								<h4 class="text-uppercase mb-4">About Us</h4>
+
+								<ul>
+									<li><a href="#">Feedback</a></li>
+									<li><a href="#">Documentation</a></li>
+									<li><a href="#">Plugins</a></li>
+									<li><a href="#">Support Forums</a></li>
+									<li><a href="#">Themes</a></li>
+									<li><a href="#">Contact Us</a></li>
+								</ul>
+
+							</div>
+
+						</div>
+
+						<div class="col-lg-3 col-sm-6">
+
+							<div class="widget widget_links widget-li-noicon">
+
+								<h4 class="text-uppercase mb-4">How we do</h4>
+
+								<ul>
+									<li><a href="#">Plugins</a></li>
+									<li><a href="#">Support Forums</a></li>
+									<li><a href="#">Themes</a></li>
+									<li><a href="#">Canvas Blog</a></li>
+									<li><a href="#">Contact Us</a></li>
+								</ul>
+
+							</div>
+
+						</div>
+
+						<div class="col-lg-3 col-sm-6">
+
+							<div class="widget">
+
+								<h4 class="text-uppercase mb-4">Need Help?</h4>
+
+								<ul class="list-unstyled">
+									<li class="mb-3">
+										<a href="#" class="d-flex">
+											<i class="me-3 bi-telephone-fill"></i>850-407-9474
+										</a>
+									</li>
+									<li class="mb-3">
+										<a href="#" class="d-flex">
+											<i class="me-3 bi-envelope-fill"></i>terrezzaopticalgroup@gmail.com
+										</a>
+									</li>
+									<li class="mb-3">
+										<a href="#" class="d-flex">
+											<i class="me-3 bi-geo-alt-fill"></i>121 Baptist Way, Ste 1200, Pensacola, FL
+											32503
+										</a>
+									</li>
+									<li class="mb-3 d-flex">
+										<i class="me-3 bi-calendar-week-fill"></i>Mon - Fri | 08:00 - 05:00
+									</li>
+								</ul>
+
+							</div>
+
+						</div>
+
+					</div>
+				</div><!-- .footer-widgets-wrap end -->
+			</div>
+
+			<!-- Copyrights
+							============================================= -->
+			<div id="copyrights" class="bg-transparent border-top op-08">
+				<div class="container">
+
+					<div class="row justify-content-md-between">
+						<div class="col-md-auto">
+							Copyrights &copy; 2023 All Rights Reserved by SemiColonWeb
+						</div>
+						<div class="col-md-auto">
+							<div class="copyright-links"><a
+									href="https://1.envato.market/c/1309643/480739/4415?u=http%3A%2F%2Fthemeforest.net%2Fuser%2Fsemicolonweb%2Fportfolio"
+									target="_blank">Portfolio</a> / <a href="http://support.semicolonweb.com"
+									target="_blank">Support</a></div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/plugins.min.js"></script>
+	<script src="js/functions.bundle.js"></script>
+
+	<!-- Select Splitter Plugin -->
+	<script src="js/components/selectsplitter.js"></script>
+	<script src="js/components/bs-select.js"></script>
+
+</body>
+
+</html>
